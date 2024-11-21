@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <body>
+    <%- include("partials/header.ejs") %>
+
+    <!-- CARASOL -->
+    <div class="container">
+      <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
+        <div class="carousel-inner">
+          <h1 class="text-center">Welcome to BLOGARONY!</h1>
+          <p class="text-center">Write your secrets or indulge in other's</p>
+          <div class="carousel-item active">
+            <img
+              src="images\patrick-fore-0gkw_9fy0eQ-unsplash.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="images\andrew-neel-cckf4TsHAuw-unsplash.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="images\jess-bailey-q10VITrVYUM-unsplash.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleRide"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleRide"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <!-- CARASOL -->
+
+    <!-- BLOG POST SECTION -->
+    <section class="blog-body">
+      <div class="container">
+        <% if (blogs.length > 0) { %>
+        <h1 class="text-center pt-3">All Blogs</h1>
+        <hr>
+        <% for (let i = 0; i < blogs.length; i++) { %>
+        <div class="blog-post">
+          <h1><%= blogs[i].title %></h1>
+          <h3>by - <%= blogs[i].writer %></h3>
+          <p><%= blogs[i].content %></p>
+        </div>
+        <hr />
+        <% } %> <% } else { %>
+        <h1>No Blogs Yet!</h1>
+        <% } %>
+      </div>
+    </section>
+    <!-- BLOG POST SECTION -->
+
+    <%- include("partials/footer.ejs") %>
+  </body>
+</html>

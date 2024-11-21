@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <body>
+    <%- include("partials/header.ejs") %>
+
+    <section class="input-field">
+        <div class="container mt-4">
+            <form action="/submit" method="post">
+                <h1 class="text-center text-white mb-5 mt-5">Welcome, Start writing your desires!</h1>
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">Author Name</span>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Username"
+                  aria-label="Username"
+                  aria-describedby="basic-addon1"
+                  name="writer-name"
+                />
+              </div>
+      
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">Title</span>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Blog Title"
+                  aria-label="Username"
+                  aria-describedby="basic-addon1"
+                  name="title-name"
+                />
+              </div>
+      
+              <div class="input-group">
+                <span class="input-group-text">Write Blog</span>
+                <textarea class="form-control" aria-label="With textarea" name="content-name"></textarea>
+              </div>
+      
+              <input type="submit" value="Submit" id="sub-btn">
+            </form>
+          </div>
+    </section>
+
+
+    <%- include("partials/footer.ejs") %>
+  </body>
+</html>

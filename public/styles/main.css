@@ -1,0 +1,115 @@
+body{
+    background-color: #121212;
+}
+
+.navbar-nav{
+    margin-left: auto;
+    font-size: 20px;
+}
+.navbar-nav a{
+    margin-right: 10px !important;
+}
+
+.navbar-brand{
+    font-size: 30px;
+    margin-left: 20px;
+}
+
+.navbar-brand span{
+ margin-left: 10px;
+}
+
+footer {
+    color: white; /* Set text color to white for all elements inside footer */
+}
+footer .nav a {
+    color: white; /* Ensure links also have white text */
+    text-decoration: none; /* Optional: Remove underline from links */
+}
+footer .nav a:hover {
+    color: lightgray; /* Optional: Add a hover effect for links */
+}
+
+footer .nav i{
+    font-size: 1.5em;
+    margin-right: 10px;
+}
+
+footer .nav i:hover{
+    color:  #007bff;
+}
+
+.carousel-inner img {
+    margin-top: 10px;
+    width: 100%;        /* Make sure the image fills the width of the container */
+    height: 500px;      /* Set a fixed height for the images (adjust as needed) */
+    object-fit: cover;  /* Ensures images cover the area without distortion */
+    border-radius: 25px;
+  }
+
+  .carousel-inner h1{
+    margin-top: 20px;
+    color: lightgray;
+  }
+
+  .carousel-inner p{
+    color: lightgray;
+  }
+
+  .input-field textarea{
+    height: 300px;
+  }
+
+  /* .input-field #sub-btn{
+    margin-top: 10px;
+    font-size: 20px;
+    width: 80px;
+    padding: 5px;
+    border-radius: 10px;
+  }
+
+  .input-field #sub-btn:hover{
+    background-color: lightgrey
+  } */
+
+  #sub-btn {
+    display: block;
+    margin: 20px auto; /* This centers the button horizontally */
+    padding: 10px 20px; /* Optional: Adjusts the button's padding */
+    background-color: #007bff; /* Optional: Change background color */
+    color: white; /* Optional: Change text color */
+    border: none; /* Optional: Remove border */
+    border-radius: 5px; /* Optional: Rounded corners */
+    font-size: 20px; /* Optional: Adjust font size */
+  }
+  
+  #sub-btn:hover {
+    background-color: #0056b3; /* Optional: Change background color on hover */
+  }
+
+  .blog-body .container{
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 20px;
+    color: white;
+    background-color: black;
+    border-radius: 25px;
+    padding-bottom: 20px;
+  }
+
+  .blog-body .container h1{
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .blog-body .container h3{
+    font-size: 1.5em;
+    color: gray;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .blog-body .container p{
+    margin-top: 10px;
+    text-align: justify;
+  }
